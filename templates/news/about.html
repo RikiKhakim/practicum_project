@@ -1,0 +1,45 @@
+{% extends 'news/base.html' %}
+{% load static %}
+
+{% block title %} About Page {% endblock title %}
+
+{% block content %}
+
+
+<body>
+    <header>
+        <h1>About Our News Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home_page' %}">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="{% url 'contact_page' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Who We Are</h2>
+            <p>Welcome to our news platform! We are dedicated to providing you with the latest and most reliable news from around the world. Our team of experienced journalists works tirelessly to keep you informed.</p>
+        </section>
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>Our mission is to deliver accurate and unbiased news to our readers. We believe in the power of information and its ability to shape the world. We are committed to upholding the highest standards of journalism.</p>
+        </section>
+        <section id="team">
+            <h2>Our Team</h2>
+            <p>Meet the people behind our news platform. Our team of journalists, editors, and technical experts are passionate about delivering news you can trust.</p>
+            <ul>
+                <li>John Doe - Editor-in-Chief</li>
+                <li>Jane Smith - Senior Reporter</li>
+                <li>Mark Johnson - Web Developer</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your News Platform. All rights reserved.</p>
+    </footer>
+</body>
+
+
+{% endblock content %}
